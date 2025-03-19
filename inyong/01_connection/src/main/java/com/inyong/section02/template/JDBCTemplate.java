@@ -19,7 +19,7 @@ public class JDBCTemplate {
         try {
             prop.load(new FileReader("src/main/java/com/inyong/config/connection-config.properties"));
 
-            Class.forName("driver");
+            Class.forName(prop.getProperty("driver"));
             conn = DriverManager.getConnection(
                     prop.getProperty("url"),
                     prop.getProperty("user"),
