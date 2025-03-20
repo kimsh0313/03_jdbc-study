@@ -50,6 +50,6 @@ public class Application2 {
                 - Statement         : sql문 실행될때마다 데이터베이스 엔진에서 매번 새롭게 컴파일
                 - PreparedStatement : 최초 1번만 컴파일되고 캐싱되어 재사용됨 => 동일한 쿼리를 반복실행할 때 더 빠름(성능이 좋음)
          */
-        
+
     }
 }
