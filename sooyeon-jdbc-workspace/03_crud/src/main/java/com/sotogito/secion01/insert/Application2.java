@@ -70,8 +70,6 @@ public class Application2 {
             return;
         }
         System.out.println("출력성공");
-
-
     }
 
 }
