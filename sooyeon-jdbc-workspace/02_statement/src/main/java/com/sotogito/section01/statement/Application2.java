@@ -23,7 +23,7 @@ public class Application2 {
             stmt = conn.createStatement();
             rs = stmt.executeQuery(query);
 
-            if(rs.next()){
+            if(rs.next()){ /// 쿼리로 반환되는 값이 하나라 WHILE이 아님
                 int emp_id = rs.getInt("emp_id");
                 String emp_name = rs.getString("emp_name");
                 double salary = rs.getDouble("salary");
