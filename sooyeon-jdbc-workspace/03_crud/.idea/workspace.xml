@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11bd9c35-7601-493c-90aa-2a48fc99b158" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sotogito/section02/update/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sotogito/section03/delete/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_dao_layer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_dao_layer/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_dao_layer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_dao_layer/src/main/java/com/sotogito/common/JDBCTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_dao_layer/src/main/java/com/sotogito/config/connection-config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_dao_layer/src/main/java/com/sotogito/mapper/menu-query.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sotogito/mapper/menu-query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sotogito/mapper/menu-query.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sotogito/secion01/insert/Application2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sotogito/secion01/insert/Application2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742450536419</updated>
       <workItem from="1742450537579" duration="3807000" />
-      <workItem from="1742515931310" duration="4658000" />
+      <workItem from="1742515931310" duration="5018000" />
     </task>
     <servers />
   </component>
