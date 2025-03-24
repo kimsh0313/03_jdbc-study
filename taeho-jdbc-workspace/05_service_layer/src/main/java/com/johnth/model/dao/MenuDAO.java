@@ -141,4 +141,28 @@ public class MenuDAO {
         return result;
     }
 
+
+    public int selectCurrentCategoryCode(Connection conn) {
+        int currentCategoryCode = 0;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String query = prop.getProperty("selectCurrentCategoryCode");
+
+        try {
+            ps = conn.prepareStatement(query);
+            rs = ps.executeQuery();
+
+            if (rs.next()) {
+                currentCategoryCode = rs.getInt("current_category_code");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            close(rs);
+            close(ps);
+        }
+        return currentCategoryCode;
+
+    }
 }

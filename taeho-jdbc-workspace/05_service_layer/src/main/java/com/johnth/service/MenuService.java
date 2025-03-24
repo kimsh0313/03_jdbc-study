@@ -39,4 +39,28 @@ public class MenuService {
 
         return result;
     }
+
+    // 신규 카테고리 등록 후 등록시 생성된 카테고리 번호로 메뉴 등록
+    public int registCategoryAndMenuV2(CategoryDTO categoryDTO, MenuDTO menuDTO) {
+        // 결과 판정값
+        int result = 0;
+
+        MenuDAO menuDAO = new MenuDAO();
+        Connection conn = getConnection();
+
+        int result1 = menuDAO.insertCategory(conn, categoryDTO);
+        int currentCategoryCode = menuDAO.selectCurrentCategoryCode(conn);
+        menuDTO.setCategory_code(currentCategoryCode);
+
+        int result2 = menuDAO.insertMenu(conn, menuDTO);
+
+        if (result1 > 1 && result2 > 1) {
+            commit(conn);
+            result = 1;
+        } else {
+            rollback(conn);
+        }
+
+        return result;
+    }
 }
